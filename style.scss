@@ -102,7 +102,7 @@
         justify-content: center;
     }
     &__item {
-        margin-right: 5.9%;
+        margin-right: 5%;
         &:last-child {
             margin-right: 0;
         }
@@ -145,7 +145,7 @@
         background-repeat: no-repeat;
         background-position: center;
         padding: 504px 668px;
-        top: -209px;
+        top: -230px;
         right: 0;
         &-bubbles {
             position: absolute;
@@ -177,6 +177,7 @@
     }
     &__item {
         width: 23.95209580838323%;
+        min-width: 240px;
         min-height: 286px;
         padding: 39px 19px 17px;
         box-shadow: -4px 4px 24px 1px rgba(0, 0, 0, 0.15), 0 0 0 rgba(0, 0, 0, 0.07);
@@ -302,6 +303,7 @@
     }
     &__item {
         width: 29.94011976047904%;
+        display: block;
         text-decoration: none;
         margin-bottom: 131px;
         &:hover .offer__img {
@@ -478,5 +480,184 @@
 
 
 @media screen and (max-width: 1800px) {
+    .request {
+        &__img {
+            right: 50%;
+            transform: translate(75%);
+        }
+        .form {
+            margin: 280px auto 0;
+        }
+        &__container {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .help {
+        &__bg {
+            left: -145px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .head {
+        &__nav {
+            width: 100%;
+        }
+        &__item {
+            margin-right: 0;
+        }
+        &__list {
+            justify-content: space-between;
+        }
+    }
+    .request {
+        &__img {
+            transform: translate(37%);
+        }
+    }
+    .help {
+        overflow: hidden;
+        z-index: -2;
+        &__point {
+            margin: 0;
+            margin-bottom: 70px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-child(odd) {
+                margin: 0;
+                margin-left: 100px;
+                margin-bottom: 70px;
+            }
+        }
+        &__bg {
+            display: none;
+        }
+    }
+    .contacts {
+        &__container {
+            display: block;
+        }
+        .form {
+            margin: 146px auto 0;
+        }
+        &__footer {
+            background-color: #41414d;
+        }
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .container {
+        width: 95%;
+    }
+    .request {
+        margin-bottom: 150px;
+        &__img {
+            transform: translate(50%);
+            padding: 148px 180px;
+            background-image: url('img/request__img-s.png');
+        }
+        &__bg {
+            display: none;
+            &-bubbles {
+                display: none;
+            }
+        }
+        .form {
+            margin-top: 50px;
+        }
+    }
+
+    .requirment {
+        margin-bottom: 0;
+        &__item {
+            margin: 0 auto 55px;
+        }
+    }
     
+    .head {
+        margin-bottom: 40px;
+        &__list {
+            display: block;
+        }
+        &__item {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &__link {
+            color: #41414d;
+        }
+    }
+
+    .help {
+        &__point {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            &:nth-child(odd) {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .offer {
+        &__bg {
+            display: none;;
+        }
+        &__item {
+            min-width: 265px; // global
+            margin: 0 auto 50px;
+        }
+        &__card {
+            display: block;
+        }
+    }
+
+    .contacts {
+        &__info {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .request {
+        &__img {
+            display: none;
+        }
+    }
+
+    .form {
+        width: 100%;
+        &__header {
+            font-size: 25px;
+        }
+    }
+
+    .requirment {
+        &__header {
+            font-size: 25px;
+        }
+    }
+
+    .offer {
+        &__head {
+            font-size: 25px;
+        }
+    }
+
+    .contacts {
+        &__head {
+            font-size: 25px;
+        }
+    }
 }
