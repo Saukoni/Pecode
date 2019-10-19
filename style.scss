@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Comic B';
+    src: url('fonts/subset-ComicSansMS-Bold.eot');
+    src: url('fonts/subset-ComicSansMS-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-ComicSansMS-Bold.woff2') format('woff2'),
+        url('fonts/subset-ComicSansMS-Bold.woff') format('woff'),
+        url('fonts/subset-ComicSansMS-Bold.ttf') format('truetype'),
+        url('fonts/subset-ComicSansMS-Bold.svg#ComicSansMS-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comic';
+    src: url('fonts/subset-ComicSansMS.eot');
+    src: url('fonts/subset-ComicSansMS.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-ComicSansMS.woff2') format('woff2'),
+        url('fonts/subset-ComicSansMS.woff') format('woff'),
+        url('fonts/subset-ComicSansMS.ttf') format('truetype'),
+        url('fonts/subset-ComicSansMS.svg#ComicSansMS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60.88541666666667%;
+}
+
+.form {
+    margin-top: 155px;
+    width: 333px;
+    &__header {
+        color: #272f2f;
+        font-family: "Comic B";
+        font-size: 30px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    &__input {
+        padding: 4px 0px;
+        border: none;
+        outline: none;
+        font-family: "Comic";
+        font-size: 16px;
+        line-height: 22px;
+        border-bottom: 2px solid #32cfb6;
+        display: block;
+        width: 100%;
+        &-email {
+            margin-top: 24px;
+            margin-bottom: 9px;
+            color: #1db8a4;
+            font-family: "Comic";
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-image: linear-gradient(49deg, #fb6a4e 0%, #ff606a 100%);
+        min-width: 243px;
+        min-height: 60px;
+        color: #ffffff;
+        font-family: "Comic B";
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin: 50px auto 0;
+        cursor: pointer;
+    }
+}
+
+.head {
+    padding-top: 42px;
+    margin-bottom: 145px;
+    position: relative;
+    z-index: 10;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__nav {
+        width: 53.55004277159966%;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 5.9%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Comic";
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        &:hover {
+            color: #272f2f;
+            transition: 0.7s;
+        }
+    }
+}
+
+.request {
+    position: relative;
+    margin-bottom: 318px;
+    &:first-child {
+        margin-bottom: 29px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        background-image: url('img/image.png');
+        background-repeat: no-repeat;
+        padding: 277px 350px;
+        background-position: center;
+        position: relative;
+        z-index: 10;
+    }
+    &__bg {
+        position: absolute;
+        background-image: url('img/bg_png/1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 504px 668px;
+        top: -209px;
+        right: 0;
+        &-bubbles {
+            position: absolute;
+            background-image: url('img/bg_png/right.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 165px 108px;
+            left: 0;
+            bottom: -396px;
+        }
+    }
+}
+
+.requirment {
+    margin-bottom: 137px;
+    &__header {
+        text-align: center;
+        color: #272f2f;
+        font-family: "Comic B";
+        font-size: 30px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 99px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 23.95209580838323%;
+        min-height: 286px;
+        padding: 39px 19px 17px;
+        box-shadow: -4px 4px 24px 1px rgba(0, 0, 0, 0.15), 0 0 0 rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        background-color: #fafafa;
+        margin-bottom: 95px;
+        .requirment__img {
+            background-image: url('img/requirments/1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+            padding: 64px 78px;
+            margin-bottom: 22px;
+        }
+        &:nth-child(2) .requirment__img {
+            background-image: url('img/requirments/2.png');
+            padding: 60px 61px;
+            margin-bottom: 30px;
+        }
+        &:nth-child(3) .requirment__img {
+            background-image: url('img/requirments/3.png');
+            padding: 63px 70px;
+        }
+        &:nth-child(4) .requirment__img {
+            background-image: url('img/requirments/4.png');
+            padding: 65px;
+            margin-bottom: 20px;
+        }
+        &:nth-child(5) .requirment__img {
+            background-image: url('img/requirments/5.png');
+            padding: 63px 86px;
+            margin-bottom: 25px;
+        }
+        &:nth-child(6) .requirment__img {
+            background-image: url('img/requirments/6.png');
+            padding: 51px 107px;
+            margin-bottom: 40px;
+        }
+        &:nth-child(7) .requirment__img {
+            background-image: url('img/requirments/7.png');
+            padding: 41px 76px;
+            margin-bottom: 54px;
+        }
+        &:nth-child(8) .requirment__img {
+            background-image: url('img/requirments/8.png');
+            padding: 52px 75px;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.help {
+    position: relative;
+    padding-top: 42px;
+    background-color: #1ea992;
+    padding-bottom: 50px;
+    &__header {
+        color: #ffffff;
+        font-family: "Comic B";
+        font-size: 30px;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 89px;
+    }
+    &__point {
+        display: flex;
+        justify-content: space-between;
+        max-width: 550px;
+        font-family: "Comic B";
+        color: #ffffff;
+        margin-left: 52.09580838323353%;
+        &:nth-child(odd) {
+            margin-left: 60.39349871685201%;
+            max-width: 450px;
+            .help__desc {
+                max-width: 350px;
+            }
+        }
+        margin-bottom: 91px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__number {
+        font-size: 60px;
+        line-height: 26px;
+        line-height: 38px;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        max-width: 450px;
+    }
+    &__bg {
+        background-image: url('img/2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        padding: 477px 480px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.offer {
+    padding-top: 82px;
+    position: relative;
+    &__head {
+        text-align: center;
+        color: #272f2f;
+        font-family: "Comic B";
+        font-size: 30px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 130px;
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 29.94011976047904%;
+        text-decoration: none;
+        margin-bottom: 131px;
+        &:hover .offer__img {
+            background-image: url('img/offers/hover2.png');
+            padding: 102px;
+        }
+        &:nth-child(2):hover .offer__img {
+            background-image: url('img/offers/hover1.png');
+            padding: 102px;
+        }
+        &:nth-child(3):hover .offer__img {
+            background-image: url('img/offers/hover3.png');
+            padding: 102px;
+        }
+        &:nth-child(4):hover .offer__img {
+            background-image: url('img/offers/hover4.png');
+            padding: 102px;
+        }
+        &:nth-child(5):hover .offer__img {
+            background-image: url('img/offers/hover5.png');
+            padding: 102px;
+        }
+        &:nth-child(6):hover .offer__img {
+            background-image: url('img/offers/hover6.png');
+            padding: 102px;
+        }
+        .offer__img {
+            background-image: url('img/offers/1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 85px 83px;
+            margin-bottom: 35px;
+        }
+        &:nth-child(2) .offer__img {
+            background-image: url('img/offers/2.png');
+            padding: 88px;
+            margin-bottom: 28px;
+        }
+        &:nth-child(3) .offer__img {
+            background-image: url('img/offers/3.png');
+            padding: 88px;
+            margin-bottom: 28px;
+        }
+        &:nth-child(4) .offer__img {
+            background-image: url('img/offers/4.png');
+            padding: 88px;
+            margin-bottom: 33px;
+        }
+        &:nth-child(5) .offer__img {
+            background-image: url('img/offers/5.png');
+            padding: 88px;
+            margin-bottom: 35px;
+        }
+        &:nth-child(6) .offer__img {
+            background-image: url('img/offers/6.png');
+            padding: 88px;
+            margin-bottom: 28px;
+        }
+    }
+    &__desc {
+        color: #272f2f;
+        font-family: "Comic B";
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: -0.36px;
+    }
+    &__bg {
+        position: absolute;
+        right: 0;
+        top: 121px;
+        background-image: url('img/bg_png/left2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 269px 118px;
+    }
+}
+
+.contacts {
+    background-image: url('img/bg_png/3.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 150px;
+    .form {
+        margin-top: 146px;
+        &__header {
+            color: #ffffff;
+            font-size: 20px;
+        }
+        &__input {
+            background: transparent;
+            color: #ffffff;
+        }
+    }
+    &__head {
+        color: #ffffff;
+        font-family: "Comic B";
+        font-size: 30px;
+        line-height: 22px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 136px;
+    }
+    &__info {
+        width: 350px;
+        padding-top: 134px;
+        &-header {
+            color: #ffffff;
+            font-family: "Comic B";
+            font-size: 20px;
+            line-height: 33px;
+            text-transform: uppercase;
+            margin-bottom: 54px
+        }
+        &-desc {
+            color: #ffffff;
+            font-family: "Comic";
+            font-size: 16px;
+            line-height: 38px;
+            text-transform: uppercase;
+            letter-spacing: 1.28px;
+            margin-bottom: 77px;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 192px;
+    }
+    &__link {
+        display: block;
+        background-image: url('img/sotial_network/linkedin.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 16px;
+        &:hover {
+            background-image: url('img/sotial_network/linkedin_active.png');
+        }
+        &:nth-child(2) {
+            background-image: url('img/sotial_network/twitter.png');
+            padding: 13px 16px;
+            &:hover {
+                background-image: url('img/sotial_network/twiter_active.png');
+            }
+        }
+        &:nth-child(3) {
+            background-image: url('img/sotial_network/fb.png');
+            padding: 16px 8px;
+            &:hover {
+                background-image: url('img/sotial_network/fb_active.png');
+            }
+        }
+    }
+    &__map {
+        height: 660px;
+    }
+    &__footer {
+        text-align: center;
+        color: #ffffff;
+        font-family: "Comic B";
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 20px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    
+}
